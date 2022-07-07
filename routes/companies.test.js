@@ -1,17 +1,6 @@
 "use strict";
 
 const request = require("supertest");
-const { Pool } = require('pg')
-
-const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'jobly_test',
-  password: '0258',
-  port: 5423,
-  idleTimeoutMillis: 0,
-  connectionTimeoutMillis: 0,
-});
 
 const db = require("../db");
 const app = require("../app");
